@@ -1,0 +1,361 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    padding: 1rem 4rem 0 4rem;
+    display: flex;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons a span {
+    color: white;
+}
+
+.cn-logo {
+    width: 7rem;
+}
+
+.games-logo {
+    width: 2.5rem;
+}
+
+.videos-logo {
+    width: 2.5rem;
+}
+
+.apps-logo {
+    width: 2.5rem;
+}
+
+/* cartoon-characters */
+
+.cartoon-characters {
+    margin: 3rem 3rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    overflow-x: auto;
+}
+
+.images::-webkit-scrollbar {
+    display: none;
+}
+
+.images span {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.images span img {
+    background-color: #534b53;
+    padding: 0.01rem;
+}
+
+.images span:hover {
+    cursor: grab;
+    animation: zoom forwards 0.3s linear;
+}
+
+/* arrows */
+.arrow {
+    width: 5rem;
+    height: 2rem;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+/* arrows */
+/* first-row */
+.first-row-left-arrow {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    transform: rotate(180deg);
+    padding: 0.2rem;
+    border-radius: 25%;
+    background-color: rgba(232, 223, 223, 0.661);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.first-row-right-arrow {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.2rem;
+    border-radius: 25%;
+    background-color: rgba(232, 223, 223, 0.661);
+}
+
+.first-row {
+    position: relative;
+    background-image: url('./public/bg_feature_card_rail.bfa1065d.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+    width: 100%;
+}
+
+.first-row .row {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.first-row .row::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    margin: 0 2rem 0 2rem;
+    position: relative;
+    background-color: #000000 !important;
+    color: white;
+}
+
+.card .image img {
+    transition: all 0.3s ease;
+    width: 35rem;
+}
+
+.card .disc {
+    bottom: 0;
+    padding-left: 15px;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(41, 41, 41, 0.6278886554621849) 100%, rgba(255, 255, 255, 1) 100%);
+    display: none;
+}
+
+.card:hover>.disc {
+    cursor: pointer;
+    display: block;
+    animation: appear-text 0.3s ease forwards;
+}
+
+.card:hover>.image img {
+    transform: scale(1.01);
+}
+
+
+/* first-row */
+/* featured games */
+.featured-games {
+    position: relative;
+    background-image: url("public/bg_grey_content_rail.6683494b.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.feature-game-right-arrow {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    padding: 0.2rem;
+    border-radius: 25%;
+    background-color: rgba(232, 223, 223, 0.661);
+    cursor: pointer;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.feature-game-left-arrow {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    padding: 0.2rem;
+    border-radius: 25%;
+    background-color: rgba(232, 223, 223, 0.661);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 2rem 20rem;
+}
+
+.title img {
+    width: 3rem;
+}
+
+.title h2 {
+    margin-left: 3rem;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.games-list-row {
+    display: flex;
+    overflow-x: auto;
+}
+
+.games-list-row::-webkit-scrollbar {
+    display: none;
+}
+
+.game-list-card {
+    width: 20rem;
+    margin: 0 1rem 0 1rem;
+    display: inline-block;
+    background-color: antiquewhite;
+    transition: all 0.2s ease;
+}
+
+.game-list-card:hover {
+    transform: scale(1.01);
+}
+
+.game-list-card .poster-img {
+    height: 14rem;
+    width: 20rem;
+}
+
+.game-list-card .disc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.game-list-card .text {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 15rem;
+}
+
+.games-logo {
+    width: 3rem;
+    padding: 0.4rem;
+    background-color: #000000;
+}
+
+.check-all-games {
+    cursor: pointer;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-all-games:hover{
+    animation: zoom 1a ease forwards;
+}
+
+.check-all-games .view-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48rem;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #f05589;
+}
+.check-all-games .view-link img {
+    width: 2.5rem;
+}
+
+.check-all-games a {
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.check-all-games-right-arrow {
+    border-radius: 25%;
+}
+
+/* featured games */
+/* top-rated-game */
+.top-rated-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("public/Promo_bg.d4f4b498.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.top-rated-game .top-rated {
+    border: 2px black solid;
+    display: flex;
+    width: 80rem;
+}
+/* top-rated-game */
+
+/* animation for characters hovaring */
+@keyframes zoom {
+    0% {
+        transform: scale(0.9);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* animation for top rated (zoomig) */
+@keyframes appear-text {
+    0% {
+        bottom: -5px;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        bottom: 2px;
+    }
+}
