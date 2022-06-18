@@ -121,7 +121,7 @@ nav {
     background-image: url('./public/bg_feature_card_rail.bfa1065d.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 50vh;
+    height: 500px;
     width: 100%;
 }
 
@@ -271,17 +271,17 @@ nav {
 }
 
 .check-all-games {
-    cursor: pointer;
     margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.check-all-games:hover{
-    animation: zoom 1a ease forwards;
+.check-all-games .view-link:hover{
+    animation: zoom 1s ease forwards;
 }
 
 .check-all-games .view-link {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -324,26 +324,69 @@ nav {
 .top-rated-game .top-rated {
     border: 2px black solid;
     display: flex;
-    width: 80rem;
+    width: 70rem;
+    border: 0.3rem solid;
+    border-image: linear-gradient(to bottom right,#fce112,#38b5d1,#ef2e79,#fce112) 1;
+}
+.top-rated-game .top-rated .image,
+.top-rated-game .top-rated .image img {
+    width: 35rem;
+    height: 20rem;
+}
+.top-rated-game .top-rated-disc {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-rated-game .top-rated-disc .text h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.top-rated-game .top-rated-disc p {
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+.top-rated-game .top-rated-disc .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    background-color: #ef2e79;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.top-rated-game .top-rated-disc .link:hover{
+    animation: zoom 1s ease forwards;
+}
+.top-rated-game .top-rated-disc .link a {
+    color: white;
+    text-decoration: none;
 }
 /* top-rated-game */
 
 /* animation for characters hovaring */
 @keyframes zoom {
     0% {
-        transform: scale(0.9);
-    }
-
-    25% {
         transform: scale(1);
     }
 
-    75% {
-        transform: scale(1.2);
+    50% {
+        transform: scale(1.10);
     }
 
     100% {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 
