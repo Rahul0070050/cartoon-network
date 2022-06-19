@@ -180,7 +180,8 @@ nav {
     overflow-x: hidden;
 }
 
-.feature-game-right-arrow {
+.feature-game-right-arrow,
+.top-videos-right-arrow {
     position: absolute;
     top: 35%;
     left: 10px;
@@ -192,7 +193,8 @@ nav {
     z-index: 1;
 }
 
-.feature-game-left-arrow {
+.feature-game-left-arrow,
+.top-videos-left-arrow {
     position: absolute;
     top: 35%;
     right: 10px;
@@ -202,7 +204,7 @@ nav {
     cursor: pointer;
     z-index: 1;
 }
-
+/*  */
 .title {
     display: flex;
     align-items: center;
@@ -222,17 +224,21 @@ nav {
     font-weight: 700;
     display: inline-block;
 }
+/*  */
 
-.games-list-row {
+.games-list-row,
+.videos-list-row {
     display: flex;
     overflow-x: auto;
 }
 
-.games-list-row::-webkit-scrollbar {
+.games-list-row::-webkit-scrollbar, 
+.videos-list-row::-webkit-scrollbar{
     display: none;
 }
 
-.game-list-card {
+.game-list-card,
+.video-list-card {
     width: 20rem;
     margin: 0 1rem 0 1rem;
     display: inline-block;
@@ -240,23 +246,27 @@ nav {
     transition: all 0.2s ease;
 }
 
-.game-list-card:hover {
+.game-list-card:hover,
+.video-list-card:hover {
     transform: scale(1.01);
 }
 
-.game-list-card .poster-img {
+.game-list-card .poster-img,
+.video-list-card .poster-img {
     height: 14rem;
     width: 20rem;
 }
 
-.game-list-card .disc {
+.game-list-card .disc,
+.video-list-card .disc {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
 }
 
-.game-list-card .text {
+.game-list-card .text,
+.video-list-card .text {
     overflow: hidden;
     white-space: nowrap;
     display: inline-block;
@@ -264,23 +274,28 @@ nav {
     width: 15rem;
 }
 
-.games-logo {
+.games-logo,
+.video-logo {
     width: 3rem;
     padding: 0.4rem;
     background-color: #000000;
 }
 
-.check-all-games {
+/* common */
+.check-all-games,
+.check-all-videos {
     margin-top: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.check-all-games .view-link:hover{
+.check-all-games .view-link:hover,
+.check-all-videos .view-link:hover{
     animation: zoom 1s ease forwards;
 }
 
-.check-all-games .view-link {
+.check-all-games .view-link,
+.check-all-videos .view-link {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -291,11 +306,13 @@ nav {
     padding: 2rem;
     background-color: #f05589;
 }
-.check-all-games .view-link img {
+.check-all-games .view-link img,
+.check-all-videos .view-link img {
     width: 2.5rem;
 }
 
-.check-all-games a {
+.check-all-games a,
+.check-all-videos a {
     font-size: xx-large;
     text-transform: uppercase;
     text-decoration: none;
@@ -304,7 +321,7 @@ nav {
     font-family: 'Russo One', sans-serif;
     letter-spacing: 2px;
 }
-
+/* common */
 .check-all-games-right-arrow {
     border-radius: 25%;
 }
@@ -374,6 +391,39 @@ nav {
     text-decoration: none;
 }
 /* top-rated-game */
+/* top videos */
+.top-videos {
+    background-image: url("public/bg_black_content_rail.fec5ead9.png");
+    background-size: 100% 100%;
+    position: relative;
+    height: 650px;
+}
+/* top videos */
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+.footer {
+    width: 50%;
+}
+.footer .text {
+    display: flex;
+    color: white;
+}
+.footer .links-row{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .links-row .cl-1,
+.footer .links-row .cl-2 {
+    display: flex;
+}
+/* footer */
 
 /* animation for characters hovaring */
 @keyframes zoom {
