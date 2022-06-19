@@ -89,6 +89,7 @@ nav {
     height: 5rem;
 }
 .arrow-right {
+    transform: rotate(180deg);
     margin-left: 1rem;
 }
 /* arrows */
