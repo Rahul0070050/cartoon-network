@@ -38,6 +38,8 @@ nav {
 }
 
 .games-logo {
+    height: 3rem;
+    padding: 0 !important;
     width: 2.5rem;
 }
 
@@ -84,13 +86,11 @@ nav {
 /* arrows */
 .arrow {
     width: 5rem;
-    height: 2rem;
+    height: 5rem;
 }
-
-.arrow-left {
-    transform: rotate(180deg);
+.arrow-right {
+    margin-left: 1rem;
 }
-
 /* arrows */
 /* first-row */
 .first-row-left-arrow {
