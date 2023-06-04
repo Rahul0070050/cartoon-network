@@ -35,10 +35,6 @@ cd cartoon-network-clone
 
 Contributions to the project are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository. Additionally, you can fork the repository and submit a pull request with your proposed changes.
 
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this clone for personal or commercial purposes.
-
 ## Disclaimer
 
 This project is a clone and intended for educational and portfolio purposes only. It is not affiliated with Cartoon Network or its parent company in any way. All content, including images and media, belongs to their respective owners and is used for demonstration purposes only.
